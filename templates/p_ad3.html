@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block page %}
+	<div class="ad_block" id="elephant" onclick="location.href='ads/3';">
+		<div class="img_contener">
+			<img src="{% static 'img/elephant.png' %}">	
+		</div>
+
+		<div class="ad_contener">
+			<div class="ad_title">
+				<h2>Продам слона</h2>
+			</div>
+			<div class="ad_autor">
+				<h2>Дмитрий</h2>
+			</div>
+			<div class="ad_nomber">
+				<h2>82458953576</h2>
+			</div>
+		</div>
+	</div>
+{% endblock page %}

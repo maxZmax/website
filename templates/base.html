@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Доска объявлений</title>
+		<link rel="shortcut icon" href="{% static 'favicon.ico'%}"/>
+		<link rel="stylesheet" href="{% static 'css/base.css'%}" type="text/css" media="screen"/>
+	</head>
+
+	<header onclick="location.href='/';">
+		<div id="logo" class="image-out">
+			<script type="text/javascript" src="{% static 'js/logo.js' %}"></script>
+		</div>
+		<div id="title">
+			<h1>Доска объявлений</h1>
+		</div>
+	</header>
+
+	<div id="page">
+		{% block page %}
+			<div>
+				<h2>Блок объявлений</h2>
+			</div>
+		{% endblock page %}
+	</div>
+
+</html>
