@@ -50,7 +50,7 @@ def ads(request, adid):
 
 def logo(request):
 	ip = get_client_ip(request)[0]
-	obj = BanIp.objects.get()
+	obj = BanIp.objects.get(ip_address=ip)
 	obj.count_logo += 1
 	obj.save()
 
